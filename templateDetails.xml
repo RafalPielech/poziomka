@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.5" type="template">
+	<name>szablon-fow</name>
+	<creationDate>2015-12-02</creationDate>
+	<author>Rafal Pielech</author>
+	<authorEmail>rafal.pielech@gmail.com</authorEmail>
+	<authorUrl>http://www.google.com</authorUrl>
+	<copyright>Rafal Pielech 2015</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Szablon FOW</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
