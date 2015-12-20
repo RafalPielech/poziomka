@@ -16,14 +16,26 @@
 		<folder>css</folder>
 	</files>
 	<positions>
+		<position>top</position>
 		<position>breadcrumb</position>
 		<position>left</position>
+		<position>content</position>
 		<position>right</position>
-		<position>top</position>
-		<position>user1</position>
-		<position>user2</position>
-		<position>user3</position>
-		<position>user4</position>
 		<position>footer</position>
 	</positions>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="templateColor" class="" type="color" default="#08C"
+				label="Kolor" description="Kolor opis." />
+			<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+				label="Tło" description="Tło opis." />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="logoFile" class="" type="media" default=""
+			label="Logo" description="Logo opis." />
+ 		</fieldset>
+	</fields>
+</config>
 </extension>
