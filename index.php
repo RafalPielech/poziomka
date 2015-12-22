@@ -3,7 +3,10 @@
 $app = JFactory::getApplication();
 $sitename = $app->getCfg('sitename');
 $doc = JFactory::getDocument();
+// Bootstrap
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
+$doc->addScript($this->baseurl . '/media/jui/js/bootstrap.min.js');
+// Template specific style
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 ?>
 
