@@ -1,0 +1,2 @@
+Licensed graphics used in the template:
+1. Logo image (logo.svg) originally from https://commons.wikimedia.org/wiki/File:Herb_Rzeczypospolitej_Obojga_Narodow.svg 
