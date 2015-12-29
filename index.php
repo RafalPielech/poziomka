@@ -3,11 +3,12 @@
 $app = JFactory::getApplication();
 $sitename = $app->getCfg('sitename');
 $doc = JFactory::getDocument();
+$templateUrl = $this->baseurl . '/templates/' . $this->template;
 // Bootstrap
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addScript($this->baseurl . '/media/jui/js/bootstrap.min.js');
 // Template specific style
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
+$doc->addStyleSheet($templateUrl . '/css/template.css');
 ?>
 
 <!DOCTYPE html>
@@ -22,15 +23,22 @@ lang="<?php echo $this->language; ?>" >
 
 <body>
 
-<div class="container">
-
   <div class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#"><?php echo $sitename ?></a>
-        <jdoc:include type="modules" name="top" style="none" />
+      <div class="row-fluid">
+        <div class="span3">
+          <a class="brand" href="#">
+            <img id="logotyp" src=<?php echo '"' . $templateUrl . "/images/logo.svg\""; ?>>
+          </a>
+        </div>
+        <div class="span9">
+          <jdoc:include type="modules" name="top" style="none" />
+        </div>
+      </div>
     </div>
   </div>
-  
+
+<div class="container">  
 </div>
 
 
