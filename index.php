@@ -34,9 +34,29 @@ lang="<?php echo $this->language; ?>" >
   </div>
 </div>
 
-<div id="fow-content" class="container">  
+<div id="fow-content" class="container">
+
+    <div class="hero-unit">
+      <p>Tagline</p>
+      <p>
+        <a class="btn btn-primary btn-small">
+          Więcej...
+        </a>
+      </p>
+    </div>
+    
   <div class="row">
-    <div class="span4" style="background-color: #f99">.col-md-4</div>
+    <div class="span4">
+        <ul class="thumbnails">
+      <li class="span4">
+        <div class="thumbnail">
+          <img src=<?php echo '"' . $fowUrl . '/images/logo.svg' . '"'; ?> alt="">
+          <h3>Thumbnail label</h3>
+          <p>Thumbnail caption...</p>
+        </div>
+      </li>
+    </ul>
+    </div>
     <div class="span4" style="background-color: #9f9">.col-md-4</div>
     <div class="span4" style="background-color: #99f">.col-md-4</div>
   </div>

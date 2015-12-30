@@ -8,9 +8,6 @@
 }
 
 #fow-nav {
-/*
-	width: 1200px;
-*/
 	margin-top: 15px;
 }
 
@@ -18,8 +15,16 @@
 	margin: 45px 10px 0px 20px;
 }
 
-#fow-content {
-/*
-	width: 1200px;
-*/
+#fow-content .hero-unit, #fow-content .thumbnail {
+	padding: 25px;
+}
+
+#fow-content .hero-unit {
+	background-color: #fff;
+}
+
+#fow-content .thumbnail {
+	border: 0px solid #ddd;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.055);
 }
