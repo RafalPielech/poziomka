@@ -3,12 +3,12 @@
 $app = JFactory::getApplication();
 $sitename = $app->getCfg('sitename');
 $doc = JFactory::getDocument();
-$templateUrl = $this->baseurl . '/templates/' . $this->template;
+$fowUrl = $this->baseurl . '/templates/' . $this->template;
 // Bootstrap
 $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addScript($this->baseurl . '/media/jui/js/bootstrap.min.js');
 // Template specific style
-$doc->addStyleSheet($templateUrl . '/css/template.css');
+$doc->addStyleSheet($fowUrl . '/css/template.css');
 ?>
 
 <!DOCTYPE html>
@@ -21,26 +21,26 @@ lang="<?php echo $this->language; ?>" >
 <jdoc:include type="head" />
 </head>
 
-<body>
+<body id="fow-body">
 
+<div id="fow-nav" class="container">  
   <div class="navbar">
     <div class="navbar-inner">
-      <div class="row-fluid">
-        <div class="span3">
           <a class="brand" href="#">
-            <img id="logotyp" src=<?php echo '"' . $templateUrl . "/images/logo.svg\""; ?>>
+            <img id="logotyp" src=<?php echo '"' . $fowUrl . '/images/logo.svg' . '"'; ?>>
           </a>
-        </div>
-        <div class="span9">
           <jdoc:include type="modules" name="top" style="none" />
-        </div>
-      </div>
     </div>
   </div>
-
-<div class="container">  
 </div>
 
+<div id="fow-content" class="container">  
+  <div class="row">
+    <div class="span4" style="background-color: #f99">.col-md-4</div>
+    <div class="span4" style="background-color: #9f9">.col-md-4</div>
+    <div class="span4" style="background-color: #99f">.col-md-4</div>
+  </div>
+</div>
 
 </body>
 

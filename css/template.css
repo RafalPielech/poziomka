@@ -1,4 +1,25 @@
 
+#fow-body {
+	font-family: sans-serif;
+}
+
 #logotyp {
 	width: 100px;
+}
+
+#fow-nav {
+/*
+	width: 1200px;
+*/
+	margin-top: 15px;
+}
+
+#fow-nav .nav {
+	margin: 45px 10px 0px 20px;
+}
+
+#fow-content {
+/*
+	width: 1200px;
+*/
 }
