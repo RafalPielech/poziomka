@@ -36,29 +36,46 @@ lang="<?php echo $this->language; ?>" >
 
 <div id="fow-content" class="container">
 
-    <div class="hero-unit">
-      <p>Tagline</p>
-      <p>
-        <a class="btn btn-primary btn-small">
-          Więcej...
-        </a>
-      </p>
-    </div>
-    
   <div class="row">
-    <div class="span4">
-        <ul class="thumbnails">
-      <li class="span4">
-        <div class="thumbnail">
-          <img src=<?php echo '"' . $fowUrl . '/images/logo.svg' . '"'; ?> alt="">
-          <h3>Thumbnail label</h3>
-          <p>Thumbnail caption...</p>
+    <div class="span9">
+<!--
+      <div class="thumbnail">
+        <img width=700 src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_head2.jpg' . '"'; ?> alt="">
+      </div>
+-->
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="active item">
+		  <img id="carousel-img" src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_head.jpg' . '"'; ?> alt="">
+		  <div class="carousel-caption">
+			  <h4>Second Thumbnail label</h4>
+			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			  </div>
         </div>
-      </li>
-    </ul>
+      </div>
     </div>
-    <div class="span4" style="background-color: #9f9">.col-md-4</div>
-    <div class="span4" style="background-color: #99f">.col-md-4</div>
+
+    </div>
+    <div class="span3" style="background-color: #aaa">
+	  span3
+	</div>
+  </div>
+
+  <div class="row">
+    <div class="span3">
+      <ul class="thumbnails">
+        <li class="span3">
+          <div class="thumbnail">
+            <img src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_thumb.jpg' . '"'; ?> alt="">
+            <h4>Thumbnail label</h4>
+            <p>Thumbnail caption...</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="span3" style="background-color: #aaa">span3</div>
+    <div class="span3" style="background-color: #aaa">span3</div>
+    <div class="span3" style="background-color: #aaa">span3</div>
   </div>
 </div>
 

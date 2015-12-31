@@ -11,20 +11,30 @@
 	margin-top: 15px;
 }
 
+#fow-nav .navbar {
+	margin-bottom: 15px;
+}
+
 #fow-nav .nav {
 	margin: 45px 10px 0px 20px;
 }
 
-#fow-content .hero-unit, #fow-content .thumbnail {
-	padding: 25px;
+#fow-content .carousel {
+	margin-bottom: 0px;
 }
 
-#fow-content .hero-unit {
-	background-color: #fff;
+#carousel-img {
+	width: 700px;
+}
+
+#fow-content .carousel-caption {
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
 }
 
 #fow-content .thumbnail {
-	border: 0px solid #ddd;
-	border-radius: 0px;
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.055);
+	padding: 5px;
+}
+
+#fow-content .row {
+	margin-bottom: 15px;
 }
