@@ -9,6 +9,8 @@ $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
 $doc->addScript($this->baseurl . '/media/jui/js/bootstrap.min.js');
 // Template specific style
 $doc->addStyleSheet($fowUrl . '/css/template.css');
+// Detecting Active Variables
+$itemid   = $app->input->getCmd('Itemid', '');
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +23,7 @@ lang="<?php echo $this->language; ?>" >
 <jdoc:include type="head" />
 </head>
 
-<body id="fow-body">
+<body id="<?php echo ($itemid ? 'fow-body itemid-' . $itemid : 'fow-body'); ?>">
 
 <div id="fow-nav" class="container">  
   <div class="navbar">
@@ -36,47 +38,16 @@ lang="<?php echo $this->language; ?>" >
 
 <div id="fow-content" class="container">
 
-  <div class="row">
-    <div class="span9">
-<!--
-      <div class="thumbnail">
-        <img width=700 src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_head2.jpg' . '"'; ?> alt="">
-      </div>
--->
-    <div class="carousel slide">
-      <div class="carousel-inner">
-        <div class="active item">
-		  <img id="carousel-img" src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_head.jpg' . '"'; ?> alt="">
-		  <div class="carousel-caption">
-			  <h4>Second Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-			  </div>
-        </div>
-      </div>
-    </div>
+<?php if ($this->countModules('content')): ?>
+  <jdoc:include type="modules" name="content" style="none" />
+<?php endif; ?>
 
-    </div>
-    <div class="span3" style="background-color: #aaa">
-	  span3
-	</div>
-  </div>
+<jdoc:include type="component" />
 
-  <div class="row">
-    <div class="span3">
-      <ul class="thumbnails">
-        <li class="span3">
-          <div class="thumbnail">
-            <img src=<?php echo '"' . $fowUrl . '/images/tmp/tenis_thumb.jpg' . '"'; ?> alt="">
-            <h4>Thumbnail label</h4>
-            <p>Thumbnail caption...</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="span3" style="background-color: #aaa">span3</div>
-    <div class="span3" style="background-color: #aaa">span3</div>
-    <div class="span3" style="background-color: #aaa">span3</div>
-  </div>
+</div>
+
+<div id="fow-footer" class="container">
+    <p>&copy; Fundacja</p>
 </div>
 
 </body>

@@ -38,3 +38,10 @@
 #fow-content .row {
 	margin-bottom: 15px;
 }
+
+#fow-footer {
+	margin-top: 70px;
+	border-top: 1px solid #ccc;
+	padding: 5px;
+}
+

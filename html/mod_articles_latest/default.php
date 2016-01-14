@@ -5,7 +5,11 @@
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
- * 
+ */
+
+/*
+ * Original implementation
+
 <ul class="latestnews<?php echo $moduleclass_sfx; ?>">
 <?php foreach ($list as $item) :  ?>
 	<li itemscope itemtype="http://schema.org/Article">
@@ -17,8 +21,8 @@
 	</li>
 <?php endforeach; ?>
 </ul>
- * 
- */
+
+*/
 
 defined('_JEXEC') or die;
 $fowUrl = './templates/szablon-fow-joomla';
