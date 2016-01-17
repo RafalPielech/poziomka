@@ -18,10 +18,8 @@
 	</files>
 	<positions>
 		<position>top</position>
-		<position>breadcrumb</position>
+		<position>fullcontent</position>
 		<position>left</position>
-		<position>content</position>
-		<position>right</position>
 		<position>footer</position>
 	</positions>
 

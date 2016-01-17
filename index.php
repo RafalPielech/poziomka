@@ -25,6 +25,7 @@ lang="<?php echo $this->language; ?>" >
 
 <body id="<?php echo ($itemid ? 'fow-body itemid-' . $itemid : 'fow-body'); ?>">
 
+<?php if ($this->countModules('top')): ?>
 <div id="fow-nav" class="container">  
   <div class="navbar">
     <div class="navbar-inner">
@@ -35,20 +36,33 @@ lang="<?php echo $this->language; ?>" >
     </div>
   </div>
 </div>
+<?php endif; ?>
 
 <div id="fow-content" class="container">
 
-<?php if ($this->countModules('content')): ?>
-  <jdoc:include type="modules" name="content" style="none" />
+<?php if ($this->countModules('fullcontent')): ?>
+  <jdoc:include type="modules" name="fullcontent" style="none" />
 <?php endif; ?>
 
-<jdoc:include type="component" />
+<?php if ($this->countModules('left')): ?>
+  <div class="row">
+    <div class="span3">
+      <jdoc:include type="modules" name="left" style="none" />
+    </div>
+    <div class="span9">
+      <jdoc:include type="message" />
+      <jdoc:include type="component" />
+    </div>
+  </div>
+<?php endif; ?>
 
 </div>
 
+<?php if ($this->countModules('footer')): ?>
 <div id="fow-footer" class="container">
     <p>&copy; Fundacja</p>
 </div>
+<?php endif; ?>
 
 </body>
 
