@@ -39,6 +39,15 @@
 	margin-bottom: 15px;
 }
 
+#fow-content .well {
+	padding: 10px 10px 10px 0px;
+	background: none;
+	box-shadow: none;
+	border: none;
+	border-right: solid 1px #bbb;
+	border-radius: 0px;
+}
+
 #fow-footer {
 	margin-top: 70px;
 	border-top: 1px solid #ccc;

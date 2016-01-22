@@ -47,7 +47,9 @@ lang="<?php echo $this->language; ?>" >
 <?php if ($this->countModules('left')): ?>
   <div class="row">
     <div class="span3">
+    <div class="well">
       <jdoc:include type="modules" name="left" style="none" />
+    </div>
     </div>
     <div class="span9">
       <jdoc:include type="message" />
