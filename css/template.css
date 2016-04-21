@@ -54,21 +54,29 @@
 	padding: 5px;
 }
 
+.well .nav {
+	padding-right: 0px;
+}
+
 .well > .nav > li {
 	margin-left: 15px;
-	margin-bottom: 3px;
+	margin-bottom: 2px;
+	padding-bottom: 3px;
+	line-height: 25px;
 }
 
 .well > .nav > li > a {
 	padding-left: 4px;
+	padding-right: 4px;
 	color: #555;
+	margin-left: 0px;
 }
 
 .well > .nav > li > a:hover {
 	background: none;
 }
 
-.nav .nav-header {
+.well .nav .nav-header {
 	padding: 0px;
 	color: #555;
 }
